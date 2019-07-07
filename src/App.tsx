@@ -1,24 +1,62 @@
 import React from 'react';
-import logo from './logo.svg';
+import Tree from './components/Tree';
+import Sortable from './components/Sortable';
+import Collapsible from './components/Collapsible';
 import './App.css';
+
+const data = [
+  {
+    text: "Movies",
+    children: [
+      {
+        text: "Horror",
+        children: [
+          {
+            text: "Halloween"
+          },
+          {
+            text: "Alien"
+          }
+        ]
+      },
+      {
+        text: "Action",
+        children: [
+          {
+            text: "Stone Cold"
+          },
+          {
+            text: "Commando"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    text: "Books",
+    children: [
+      {
+        text: "Children of time"
+      }
+    ]
+  }
+];
+
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container text-left">
+        <Collapsible>
+          <Sortable>
+            <div>
+              <Tree data={data} />
+              <Tree data={data} />
+              <Tree data={data} />
+            </div>
+          </Sortable>
+        </Collapsible>
+      </div>
     </div>
   );
 }

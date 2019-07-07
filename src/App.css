@@ -23,6 +23,18 @@
   color: #61dafb;
 }
 
+.directory-tree.collapsible .directory-list__wrapper .directory-list__item {
+  cursor: pointer;
+}
+
+.directory-tree.collapsible .directory-list__wrapper .directory-list {
+  display: none;
+}
+
+.directory-tree.collapsible .directory-list__wrapper .directory-list.active {
+  display: block;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
