@@ -52,7 +52,6 @@ const App: React.FC = () => {
             <div>
               <Tree data={data} />
               <Tree data={data} />
-              <Tree data={data} />
             </div>
           </Sortable>
         </Collapsible>

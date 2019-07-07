@@ -25,8 +25,8 @@ class Sortable extends Component<SortableProps, {}> {
   recursiveCloneChildren(children: React.ReactNode): React.ReactNode {
     return React.Children.map(children, (child, index) => {
       if (React.isValidElement(child)) {
-        const childType: any = child.type;
-        if (childType.name === 'Tree') {
+        const childProps: any = child.props;
+        if (childProps.data) { // Tree Component
           if (React.isValidElement<TreeProps>(child)) {
             const elementChild: React.ReactElement<TreeProps> = child;
             return React.cloneElement<TreeProps>(elementChild, {

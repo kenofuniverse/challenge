@@ -10,17 +10,8 @@ class Collapsible extends Component<CollapsibleProps, {}> {
   recursiveCloneChildren(children: React.ReactNode): React.ReactNode {
     return React.Children.map(children, (child, index) => {
       if (React.isValidElement(child)) {
-        const childType: any = child.type;
-        if (childType.name === 'Sortable') {
-          if (React.isValidElement<SortableProps>(child)) {
-            const elementChild: React.ReactElement<SortableProps> = child;
-            return React.cloneElement<SortableProps>(elementChild, {
-              ...elementChild.props,
-              key: index,
-              children: this.recursiveCloneChildren(elementChild.props.children)
-            });
-          }
-        } else if (childType.name === 'Tree') {
+        const childProps: any = child.props;
+        if (childProps.data) { // Tree Component
           if (React.isValidElement<TreeProps>(child)) {
             const elementChild: React.ReactElement<TreeProps> = child;
             return React.cloneElement<TreeProps>(elementChild, {
