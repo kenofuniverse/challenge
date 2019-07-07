@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd6202b6.chunk.css",
-    "main.js": "/static/js/main.c27326b1.chunk.js",
-    "main.js.map": "/static/js/main.c27326b1.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.c5541365.js",
-    "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
-    "static/js/2.116f4e1a.chunk.js": "/static/js/2.116f4e1a.chunk.js",
-    "static/js/2.116f4e1a.chunk.js.map": "/static/js/2.116f4e1a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5c5986988ab367811ac55f82be354f3d.js": "/precache-manifest.5c5986988ab367811ac55f82be354f3d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.fd6202b6.chunk.css.map": "/static/css/main.fd6202b6.chunk.css.map"
+    "main.css": "/challenge/static/css/main.fd6202b6.chunk.css",
+    "main.js": "/challenge/static/js/main.544a77c2.chunk.js",
+    "main.js.map": "/challenge/static/js/main.544a77c2.chunk.js.map",
+    "runtime~main.js": "/challenge/static/js/runtime~main.d5b78ddd.js",
+    "runtime~main.js.map": "/challenge/static/js/runtime~main.d5b78ddd.js.map",
+    "static/js/2.116f4e1a.chunk.js": "/challenge/static/js/2.116f4e1a.chunk.js",
+    "static/js/2.116f4e1a.chunk.js.map": "/challenge/static/js/2.116f4e1a.chunk.js.map",
+    "index.html": "/challenge/index.html",
+    "precache-manifest.a246f71530f780e753efe8893902fe9e.js": "/challenge/precache-manifest.a246f71530f780e753efe8893902fe9e.js",
+    "service-worker.js": "/challenge/service-worker.js",
+    "static/css/main.fd6202b6.chunk.css.map": "/challenge/static/css/main.fd6202b6.chunk.css.map"
   }
 }
